@@ -1,0 +1,53 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.61.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 658ed7b7d3cbcb37f4643c8f41ee3e6ccd66fd1e Build.PL
+SHA1 2476dc5db2a92ae1af10cf00904d388285dba788 Changes
+SHA1 3925cf9473fadde888be72db95ee2e6c19ae4bce MANIFEST
+SHA1 6633a9b73eb0252f8043df4612f33117fcf0ee65 META.yml
+SHA1 9e69019185921f101a09615921478b51d85513c0 README
+SHA1 eadc04c58913d46c5eb17f0f14e66e0ccd43e7d7 lib/Data/Keys.pm
+SHA1 fe377f9987028265eecc1b02ccbbef1e86b5c1ad lib/Data/Keys/E/Dir/Auto.pm
+SHA1 5084d35403486d0890093a22458824ffbf218d4f lib/Data/Keys/E/Dir/Lock.pm
+SHA1 f0478764279680ed7e13febf784cea9fdf39b217 lib/Data/Keys/E/Dir/LockInPlace.pm
+SHA1 bfdf7407fef2fda544cf6c347530c41c4ae5b29b lib/Data/Keys/E/Key/Adapt.pm
+SHA1 e5650250617af837752bde7cf499165cf066a4bb lib/Data/Keys/E/Key/Auto.pm
+SHA1 9c05332e819421caceffaabc7ee8567dc2f32512 lib/Data/Keys/E/Locking.pm
+SHA1 8577caca93b063246f05b543ca2cce500808794d lib/Data/Keys/E/Store/Dir.pm
+SHA1 4114865218fc11821b2d8a0d2db7a611c5dce318 lib/Data/Keys/E/Store/Mem.pm
+SHA1 e285c7c4066693b179b9ab316ddd0d48d28dcf71 lib/Data/Keys/E/UniqSet.pm
+SHA1 6dfe0b2904a4eba4aa56519ad0ea1b8511cef5f0 lib/Data/Keys/E/Value/InfDef.pm
+SHA1 6bee8166dad0e6a45af423b6f44c1069176f1898 t/01_Data-Keys.t
+SHA1 112bfeb6cf1a1d1ab49f188d993a25e83e5b410b t/01_Data-Keys_store-dir.t
+SHA1 5d91655af0b0611853b15665215d1181b6a3f96d t/01_Data-Keys_store-mem.t
+SHA1 98323d659438f3c2a61abc825f1b43da0a4e6135 t/02_Data-Keys_inflate-deflate.t
+SHA1 270ec5d7b8649cfaa2e7f2bcc95d9816d6e8c596 t/03_Data-Keys_locking_dir.t
+SHA1 9ccf5627c6e5dc72144f5b1728fc1efe21202630 t/03_Data-Keys_locking_inplace.t
+SHA1 979737ccddd2234dcba42e707f936b01d60d39e5 t/04_Data-Keys_uniqset.t
+SHA1 7a1dd002554286eb9a6e7d3dce0cdc17debaf517 t/05_Data-Keys_autofolders.t
+SHA1 2cdfc47b2b3ff3ecc3717f352bacc18ce87e4171 t/06_Data-Keys_autokey_keyadapt.t
+SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/distribution.t
+SHA1 10c564e5ffe84748070827b350edbf3d6b832b20 t/fixme.t
+SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
+SHA1 4b9423685d8ee38ab7b584f58dc9c265a4e8dea9 t/pod-spell.t
+SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAkvTS+AACgkQC0OgUPgL2SfQjwCgnomY1kYTbfj5vELkRjZ7zDnV
+eKsAn3FKJKvmZucWYT33Enx60GgKpdTs
+=TB1f
+-----END PGP SIGNATURE-----
