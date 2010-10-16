@@ -13,7 +13,7 @@ Uses callback to change keys.
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Moose::Role;
 
@@ -45,7 +45,7 @@ around 'set' => sub {
     my $key   = shift;
     my $value = shift;
     
-    $key = $self->key_adapt->($key);
+    $key = $self->key_adapt->($key, $value);
     $self->$set($key, $value);
     return $key;
 };

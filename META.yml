@@ -24,37 +24,40 @@ name: Data-Keys
 provides:
   Data::Keys:
     file: lib/Data/Keys.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Dir::Auto:
     file: lib/Data/Keys/E/Dir/Auto.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Dir::Lock:
     file: lib/Data/Keys/E/Dir/Lock.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Dir::LockInPlace:
     file: lib/Data/Keys/E/Dir/LockInPlace.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Key::Adapt:
     file: lib/Data/Keys/E/Key/Adapt.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Key::Auto:
     file: lib/Data/Keys/E/Key/Auto.pm
-    version: 0.01
+    version: 0.02
+  Data::Keys::E::Key::AutoLock:
+    file: lib/Data/Keys/E/Key/AutoLock.pm
+    version: 0.02
   Data::Keys::E::Locking:
     file: lib/Data/Keys/E/Locking.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Store::Dir:
     file: lib/Data/Keys/E/Store/Dir.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Store::Mem:
     file: lib/Data/Keys/E/Store/Mem.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::UniqSet:
     file: lib/Data/Keys/E/UniqSet.pm
-    version: 0.01
+    version: 0.02
   Data::Keys::E::Value::InfDef:
     file: lib/Data/Keys/E/Value/InfDef.pm
-    version: 0.01
+    version: 0.02
 requires:
   Carp::Clan: 0
   Digest::SHA1: 0
@@ -66,4 +69,4 @@ resources:
   bugtracker: http://github.com/jozef/Data-Keys/issues
   license: http://dev.perl.org/licenses/
   repository: git://github.com/jozef/Data-Keys.git
-version: 0.01
+version: 0.02

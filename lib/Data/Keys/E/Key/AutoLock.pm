@@ -1,13 +1,13 @@
-package Data::Keys::E::Locking;
+package Data::Keys::E::Key::AutoLock;
 
 =head1 NAME
 
-Data::Keys::E::Locking - get/set locking
+Data::Keys::E::Key::AutoLock - lock keys automatically
 
 =head1 DESCRIPTION
 
-Generic locking for set and get functions. Need an extension that is
-implementing C<lock_sh>, C<lock_ex> and C<unlock>.
+Calls C<$self->lock_sh> before each C<get>, calls C<$self->lock_ex> before
+each C<set>. Afterwards calls C<$self->unlock>.
 
 =cut
 
@@ -18,20 +18,16 @@ our $VERSION = '0.02';
 
 use Moose::Role;
 
-requires('get', 'set', 'lock_ex', 'lock_sh', 'unlock');
+requires('set', 'get', 'lock_sh', 'lock_ex', 'unlock');
 
 around 'get' => sub {
 	my $get   = shift;
 	my $self  = shift;
 	my $key   = shift;
 
-	eval { $self->lock_sh($key) };
-	return if $@;
-
+	$self->lock_sh($key);
 	my $value = $self->$get($key);
-
 	$self->unlock($key);
-
 	return $value;
 };
 
@@ -41,14 +37,10 @@ around 'set' => sub {
 	my $key   = shift;
 	my $value = shift;
 	
-	$self->lock_ex($key, 1);
-	
-    # call set
-    my $ret = $self->$set($key, $value);
-    
+	$self->lock_ex($key);
+	my $new_key = $self->$set($key, $value);
 	$self->unlock($key);
-    
-    return $ret;
+	return $new_key;
 };
 
 1;

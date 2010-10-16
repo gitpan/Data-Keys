@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.61.
+signed via the Module::Signature module, version 0.63.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,21 +15,22 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 658ed7b7d3cbcb37f4643c8f41ee3e6ccd66fd1e Build.PL
-SHA1 2476dc5db2a92ae1af10cf00904d388285dba788 Changes
-SHA1 3925cf9473fadde888be72db95ee2e6c19ae4bce MANIFEST
-SHA1 6633a9b73eb0252f8043df4612f33117fcf0ee65 META.yml
+SHA1 9fb670a09ad60ceb3459285deabc555fd948019e Changes
+SHA1 47ce8cdd41677fd2c94b11db34f185b2f8c4437a MANIFEST
+SHA1 6b020800863de05df363a9237c351b9a41f4541c META.yml
 SHA1 9e69019185921f101a09615921478b51d85513c0 README
-SHA1 eadc04c58913d46c5eb17f0f14e66e0ccd43e7d7 lib/Data/Keys.pm
-SHA1 fe377f9987028265eecc1b02ccbbef1e86b5c1ad lib/Data/Keys/E/Dir/Auto.pm
-SHA1 5084d35403486d0890093a22458824ffbf218d4f lib/Data/Keys/E/Dir/Lock.pm
-SHA1 f0478764279680ed7e13febf784cea9fdf39b217 lib/Data/Keys/E/Dir/LockInPlace.pm
-SHA1 bfdf7407fef2fda544cf6c347530c41c4ae5b29b lib/Data/Keys/E/Key/Adapt.pm
-SHA1 e5650250617af837752bde7cf499165cf066a4bb lib/Data/Keys/E/Key/Auto.pm
-SHA1 9c05332e819421caceffaabc7ee8567dc2f32512 lib/Data/Keys/E/Locking.pm
-SHA1 8577caca93b063246f05b543ca2cce500808794d lib/Data/Keys/E/Store/Dir.pm
-SHA1 4114865218fc11821b2d8a0d2db7a611c5dce318 lib/Data/Keys/E/Store/Mem.pm
-SHA1 e285c7c4066693b179b9ab316ddd0d48d28dcf71 lib/Data/Keys/E/UniqSet.pm
-SHA1 6dfe0b2904a4eba4aa56519ad0ea1b8511cef5f0 lib/Data/Keys/E/Value/InfDef.pm
+SHA1 7d95f261305cd7eecd4ce41d735e60413bae7b49 lib/Data/Keys.pm
+SHA1 164de4992d524102b59769faf8de4f29005a1576 lib/Data/Keys/E/Dir/Auto.pm
+SHA1 a430fc38c0d0ffa3f6d98e1332b337ca360c4991 lib/Data/Keys/E/Dir/Lock.pm
+SHA1 a02514f608c3cf729108144b27d34aee078412d8 lib/Data/Keys/E/Dir/LockInPlace.pm
+SHA1 4d4c66678bb8b50b245b64a2776306ce38aff719 lib/Data/Keys/E/Key/Adapt.pm
+SHA1 508e9f4e6ca39ee8f8543a654ae8c4969f421077 lib/Data/Keys/E/Key/Auto.pm
+SHA1 2982c47771805792dbc70fbb4615f2b7370f54da lib/Data/Keys/E/Key/AutoLock.pm
+SHA1 012ef3baf05e4a048a960f79b4d19b1d4bfe5399 lib/Data/Keys/E/Locking.pm
+SHA1 c07efe0829ab80b8abb246f078ece642baf0c813 lib/Data/Keys/E/Store/Dir.pm
+SHA1 70391062444c88c2821b0605daa2b33626eb13df lib/Data/Keys/E/Store/Mem.pm
+SHA1 e005aaab24ae17268b2d6600427ae4fd75cdd347 lib/Data/Keys/E/UniqSet.pm
+SHA1 67852077748b58dee04b5cb63feaa1ae8a931a88 lib/Data/Keys/E/Value/InfDef.pm
 SHA1 6bee8166dad0e6a45af423b6f44c1069176f1898 t/01_Data-Keys.t
 SHA1 112bfeb6cf1a1d1ab49f188d993a25e83e5b410b t/01_Data-Keys_store-dir.t
 SHA1 5d91655af0b0611853b15665215d1181b6a3f96d t/01_Data-Keys_store-mem.t
@@ -39,6 +40,7 @@ SHA1 9ccf5627c6e5dc72144f5b1728fc1efe21202630 t/03_Data-Keys_locking_inplace.t
 SHA1 979737ccddd2234dcba42e707f936b01d60d39e5 t/04_Data-Keys_uniqset.t
 SHA1 7a1dd002554286eb9a6e7d3dce0cdc17debaf517 t/05_Data-Keys_autofolders.t
 SHA1 2cdfc47b2b3ff3ecc3717f352bacc18ce87e4171 t/06_Data-Keys_autokey_keyadapt.t
+SHA1 05063a5b528f32c5a6549738a37f1817de3b5708 t/07_Data-Keys_autolock.t
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/distribution.t
 SHA1 10c564e5ffe84748070827b350edbf3d6b832b20 t/fixme.t
 SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
@@ -47,7 +49,7 @@ SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkvTS+AACgkQC0OgUPgL2SfQjwCgnomY1kYTbfj5vELkRjZ7zDnV
-eKsAn3FKJKvmZucWYT33Enx60GgKpdTs
-=TB1f
+iEYEARECAAYFAky5t1wACgkQC0OgUPgL2Sfq1QCfd0JUd+nFC0wkKqDY7Qrh7Dc8
+2icAoJDwb8qlBMNPO9SbyFsYRi6JXp01
+=2GmA
 -----END PGP SIGNATURE-----
